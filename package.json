@@ -1,0 +1,29 @@
+{
+  "name": "@snaptopixel/create-picto",
+  "version": "0.1.0",
+  "description": "Preview, develop and document StencilJS components",
+  "bin": {
+    "picto": "bin/picto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snaptopixel/create-picto.git"
+  },
+  "keywords": [
+    "stenciljs",
+    "web-components",
+    "stencil",
+    "documentation"
+  ],
+  "author": "Casey Corcoran (https://github.com/snaptopixel)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snaptopixel/create-picto/issues"
+  },
+  "homepage": "https://github.com/snaptopixel/create-picto#readme",
+  "dependencies": {
+    "javascript-stringify": "^1.6.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
