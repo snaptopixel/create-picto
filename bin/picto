@@ -15,15 +15,19 @@ if (firstRun) {
   })
 }
 
+require.paths = [process.cwd()+'/node_modules']
+
+const compilerOptions = {
+  strict: false,
+  esModuleInterop: true,
+  module: "esnext",
+  target: "es2017",
+  baseUrl: process.cwd()
+};
+
 require('ts-node').register({
   skipProject: true,
-  compilerOptions: {
-    strict: false,
-    esModuleInterop: true,
-    module: "esnext",
-    target: "es2017",
-    baseUrl: process.cwd()
-  },
+  compilerOptions
 })
 
 const pictoConfig = {};

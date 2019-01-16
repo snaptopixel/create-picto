@@ -1,6 +1,6 @@
 {
   "name": "@snaptopixel/create-picto",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Preview, develop and document StencilJS components",
   "bin": {
     "picto": "bin/picto"
