@@ -12,9 +12,7 @@ if (firstRun) {
   })
 }
 
-require('ts-node').register({
-  skipProject: true
-})
+require('ts-node').register()
 
 const config = require(process.cwd() + '/' + 'stencil.config.ts').config;
 const pictoConfig = {};
@@ -119,7 +117,7 @@ fs.writeFileSync('src/picto/index.html', `
 </html>
 `.trim())
 
-fs.writeFileSync('picto.config.ts', `export const config = ${stringify(config, null, 2)}`)
+fs.writeFileSync('picto.config.ts', `export const config = ${stringify(pictoConfig, null, 2)}`)
 
 if (config.plugins) {
   console.warn("[PICTO] Plugins detected, make sure you add them to picto.config.ts")
