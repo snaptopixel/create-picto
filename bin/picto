@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-console.log(`create-picto v${process.env.npm_package_version}`)
-
 'use strict';
 
+const createPkg = require('')
 const fs = require('fs')
 const stringify = require('javascript-stringify')
 const firstRun = !fs.existsSync('picto.config.ts')
@@ -17,12 +16,12 @@ if (firstRun) {
 require('ts-node').register({
   skipProject: true,
   compilerOptions: {
-    "strict": false,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "target": "es2017",
+    strict: false,
+    esModuleInterop: true,
+    module: "esnext",
+    target: "es2017",
+    baseUrl: process.cwd()
   },
-  baseUrl: process.cwd()
 })
 
 const config = require('stencil.config.ts').config;
