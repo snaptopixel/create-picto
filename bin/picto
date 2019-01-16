@@ -13,7 +13,13 @@ if (firstRun) {
 }
 
 require('ts-node').register({
-  skipProject: true
+  skipProject: true,
+  compilerOptions: {
+    "strict": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "target": "es2017",
+  }
 })
 
 const config = require(process.cwd() + '/' + 'stencil.config.ts').config;
