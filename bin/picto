@@ -12,7 +12,9 @@ if (firstRun) {
   })
 }
 
-require('ts-node').register()
+require('ts-node').register({
+  skipProject: true
+})
 
 const config = require(process.cwd() + '/' + 'stencil.config.ts').config;
 const pictoConfig = {};
