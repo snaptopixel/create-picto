@@ -2,7 +2,6 @@
 
 'use strict';
 
-const createPkg = require('')
 const fs = require('fs')
 const stringify = require('javascript-stringify')
 const firstRun = !fs.existsSync('picto.config.ts')
